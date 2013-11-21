@@ -10,4 +10,7 @@
 ;;window
 (require-package 'switch-window)
 
+;;buffer
+(require-package 'buffer-move)
+
 (provide 'init-package)

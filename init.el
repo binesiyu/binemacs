@@ -1,6 +1,6 @@
 ;; -*- coding: utf-8 -*-
-(add-to-list 'load-path (expand-file-name "~/binemacs"))
-(add-to-list 'load-path (expand-file-name "~/binemacs/init"))
+(add-to-list 'load-path (expand-file-name "~/.emacs.d"))
+(add-to-list 'load-path (expand-file-name "~/.emacs.d/init"))
 
 ;; Measure startup time
 (require 'init-time)
@@ -17,9 +17,11 @@
 
 ;;buffer
 (require 'init-buffer)
+(require 'init-uniquify)
+(require 'init-move)
 
 ;;session
-;(require 'init-sessions)
+(require 'init-sessions)
 
 (require 'init-misc)
 

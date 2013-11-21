@@ -55,8 +55,7 @@
                 register-alist)))
 
 
-(unless (boundp 'desktop-restore-frames)
-    (require-package 'frame-restore)
+(when (boundp 'desktop-restore-frames)
     (frame-restore))
 
 

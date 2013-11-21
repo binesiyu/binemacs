@@ -18,4 +18,18 @@
 ;;ibuffer
 (global-set-key (kbd "C-x C-b") 'ibuffer)
 
+;;buffer-move
+
+(define-prefix-command 'ctl-x-m-map)
+(define-key ctl-x-m-map (kbd "u") 'buf-move-up)
+(define-key ctl-x-m-map (kbd "d") 'buf-move-down)
+(define-key ctl-x-m-map (kbd "l") 'buf-move-left)
+(define-key ctl-x-m-map (kbd "r") 'buf-move-right)
+(define-key ctl-x-m-map (kbd "t") 'split-window-3)
+(define-key ctl-x-m-map (kbd "f") 'split-window-4)
+(define-key ctl-x-m-map (kbd "w") 'change-split-type-3)
+(define-key ctl-x-m-map (kbd "b") 'roll-v-3)
+
+(global-set-key (kbd "C-x m") 'ctl-x-m-map)
+
 (provide 'init-binding)
