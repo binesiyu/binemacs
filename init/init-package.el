@@ -26,4 +26,12 @@
 ;;frame
 (require-package 'maxframe)
 
+;;editing
+(require-package 'diminish)
+(require-package 'whole-line-or-region)
+(require-package 'whitespace-cleanup-mode)
+(require-package 'mic-paren)
+(require-package 'expand-region)
+
+
 (provide 'init-package)

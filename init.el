@@ -15,6 +15,9 @@
 (require 'init-elpa)
 (require 'init-package)
 
+;;editing
+(require 'init-editing)
+
 ;;ido
 (require 'init-ido)
 

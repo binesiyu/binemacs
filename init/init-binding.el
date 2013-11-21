@@ -32,6 +32,7 @@
 
 (global-set-key (kbd "C-x m") 'ctl-x-m-map)
 (global-set-key (kbd "C-x C-m") 'smex)
+
 ;;buffer
 (global-set-key (kbd "C-x k") 'kill-this-buffer)
 (global-set-key (kbd "C-x M-f") 'ido-find-file-other-window)
@@ -40,9 +41,16 @@
 
 (global-set-key (kbd "C-c y") 'bury-buffer)
 (global-set-key (kbd "C-c r") 'revert-buffer)
+
 ;;window
 (global-set-key "\C-x2" 'exsaber/split-window-v)
 (global-set-key "\C-x3" 'exsaber/split-window-h)
 (global-set-key (kbd "C-x o") 'switch-window)
+
+;;editing
+(global-set-key (kbd "RET") 'newline-and-indent)
+(global-set-key (kbd "C-.") 'set-mark-command)
+(global-set-key (kbd "C-x C-.") 'pop-global-mark)
+(global-set-key (kbd "C-c p") 'duplicate-line-or-region)
 
 (provide 'init-binding)
