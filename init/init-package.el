@@ -17,4 +17,13 @@
 (require-package 'auto-complete)
 (require-package 'yasnippet)
 
+;;theme
+(when (< emacs-major-version 24)
+      (require-package 'color-theme))
+
+(require-package 'color-theme-sanityinc-solarized)
+
+;;frame
+(require-package 'maxframe)
+
 (provide 'init-package)

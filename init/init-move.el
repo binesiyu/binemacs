@@ -26,11 +26,13 @@
  
  (defun exsaber/split-window-v ()
   "show (other-buffer) in the new window"
+  (interactive)
   (funcall (split-window-func-with-other-buffer 'split-window-vertically)))
 
 
 (defun exsaber/split-window-h ()
   "show (other-buffer) in the new window"
+ (interactive)
  (funcall  (split-window-func-with-other-buffer 'split-window-horizontally)))
  
  (defun split-window-4()

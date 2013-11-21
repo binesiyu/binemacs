@@ -29,6 +29,7 @@
 (define-key ctl-x-m-map (kbd "f") 'split-window-4)
 (define-key ctl-x-m-map (kbd "w") 'change-split-type-3)
 (define-key ctl-x-m-map (kbd "b") 'roll-v-3)
+(define-key ctl-x-m-map (kbd "m") 'toggle-maximize-frame)
 
 (global-set-key (kbd "C-x m") 'ctl-x-m-map)
 

@@ -28,6 +28,15 @@
 ;;session
 (require 'init-sessions)
 
+;;frame
+(require 'init-maxframe)
+
+;;font
+(require 'init-font)
+
+;;theme
+(require 'init-theme)
+
 (require 'init-misc)
 
 ;;key-binding
