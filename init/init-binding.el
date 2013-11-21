@@ -33,6 +33,10 @@
 
 (global-set-key (kbd "C-x m") 'ctl-x-m-map)
 
+;;kill buffer
+(global-set-key (kbd "C-x k") 'kill-this-buffer)
+
+;;window
 (global-set-key "\C-x2" 'exsaber/split-window-v)
 (global-set-key "\C-x3" 'exsaber/split-window-h)
 
