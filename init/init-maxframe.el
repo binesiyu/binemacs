@@ -19,4 +19,8 @@
 
 (add-hook 'after-init-hook 'maximize-frame)
 
+
+(setq use-file-dialog nil)
+(setq use-dialog-box nil)
+
 (provide 'init-maxframe)

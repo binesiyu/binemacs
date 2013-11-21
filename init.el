@@ -5,6 +5,12 @@
 ;; Measure startup time
 (require 'init-time)
 
+;;buildin-package
+(require 'init-buildin)
+
+;;util
+(require 'init-utils )
+
 ;;init-elpa
 (require 'init-elpa)
 (require 'init-package)

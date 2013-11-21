@@ -5,7 +5,6 @@
 ;;help
 (global-set-key (kbd "C-x /") 'help-command)
 
-
 ;;use regex searches by default
 (global-set-key (kbd "C-s") 'isearch-forward-regexp)
 (global-set-key (kbd "C-r") 'isearch-backward-regexp)
@@ -32,12 +31,18 @@
 (define-key ctl-x-m-map (kbd "m") 'toggle-maximize-frame)
 
 (global-set-key (kbd "C-x m") 'ctl-x-m-map)
-
-;;kill buffer
+(global-set-key (kbd "C-x C-m") 'smex)
+;;buffer
 (global-set-key (kbd "C-x k") 'kill-this-buffer)
+(global-set-key (kbd "C-x M-f") 'ido-find-file-other-window)
+(global-set-key (kbd "C-x C-p") 'find-file-at-point)
+(global-set-key (kbd "C-x f") 'ido-find-file)
 
+(global-set-key (kbd "C-c y") 'bury-buffer)
+(global-set-key (kbd "C-c r") 'revert-buffer)
 ;;window
 (global-set-key "\C-x2" 'exsaber/split-window-v)
 (global-set-key "\C-x3" 'exsaber/split-window-h)
+(global-set-key (kbd "C-x o") 'switch-window)
 
 (provide 'init-binding)
