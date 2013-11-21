@@ -13,4 +13,8 @@
 ;;buffer
 (require-package 'buffer-move)
 
+;;ac
+(require-package 'auto-complete)
+(require-package 'yasnippet)
+
 (provide 'init-package)

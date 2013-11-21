@@ -32,4 +32,7 @@
 
 (global-set-key (kbd "C-x m") 'ctl-x-m-map)
 
+(global-set-key "\C-x2" 'exsaber/split-window-v)
+(global-set-key "\C-x3" 'exsaber/split-window-h)
+
 (provide 'init-binding)

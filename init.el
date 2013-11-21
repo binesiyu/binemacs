@@ -20,6 +20,11 @@
 (require 'init-uniquify)
 (require 'init-move)
 
+;;ac
+(require 'init-yasnippet)
+(require 'init-auto-complete)
+
+
 ;;session
 (require 'init-sessions)
 
