@@ -56,4 +56,13 @@
 ;; auto-compression
 (auto-compression-mode t)
 
+;;default major-mode
+(setq default-major-mode 'text-mode)
+
+;;hide passwd
+(add-hook 'comint-output-filter-functions 'comint-watch-for-password-prompt)
+
+;;mouse
+(mouse-avoidance-mode 'animate)
+
 (provide 'init-misc)

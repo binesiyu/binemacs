@@ -33,5 +33,7 @@
 (require-package 'mic-paren)
 (require-package 'expand-region)
 
+;;ascii
+(require-package 'ascii)
 
 (provide 'init-package)

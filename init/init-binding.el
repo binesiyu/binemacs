@@ -29,6 +29,8 @@
 (define-key ctl-x-m-map (kbd "w") 'change-split-type-3)
 (define-key ctl-x-m-map (kbd "b") 'roll-v-3)
 (define-key ctl-x-m-map (kbd "m") 'toggle-maximize-frame)
+(define-key ctl-x-m-map (kbd "n") 'next-buffer)
+(define-key ctl-x-m-map (kbd "p") 'previous-buffer)
 
 (global-set-key (kbd "C-x m") 'ctl-x-m-map)
 (global-set-key (kbd "C-x C-m") 'smex)
@@ -38,6 +40,7 @@
 (global-set-key (kbd "C-x M-f") 'ido-find-file-other-window)
 (global-set-key (kbd "C-x C-p") 'find-file-at-point)
 (global-set-key (kbd "C-x f") 'ido-find-file)
+
 
 (global-set-key (kbd "C-c y") 'bury-buffer)
 (global-set-key (kbd "C-c r") 'revert-buffer)
