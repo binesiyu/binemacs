@@ -31,6 +31,7 @@
 (define-key ctl-x-m-map (kbd "m") 'toggle-maximize-frame)
 (define-key ctl-x-m-map (kbd "n") 'next-buffer)
 (define-key ctl-x-m-map (kbd "p") 'previous-buffer)
+(define-key ctl-x-m-map (kbd "h") 'exsaber/mark-some-thing-at-point)
 
 (global-set-key (kbd "C-x m") 'ctl-x-m-map)
 (global-set-key (kbd "C-x C-m") 'smex)
@@ -55,5 +56,7 @@
 (global-set-key (kbd "C-.") 'set-mark-command)
 (global-set-key (kbd "C-x C-.") 'pop-global-mark)
 (global-set-key (kbd "C-c p") 'duplicate-line-or-region)
+
+;(global-set-key (kbd "C-k") 'kill-whole-line)
 
 (provide 'init-binding)

@@ -84,5 +84,22 @@
 (diminish 'whole-line-or-region-mode)
 (make-variable-buffer-local 'whole-line-or-region-mode)
 
+(defun exsaber/mark-some-thing-at-point()
+  (interactive)
+  (let* ((from (point))
+         (a (mouse-start-end from from 1))
+         (start (car a))
+         (end (cadr a))
+         (goto-point (if (= from start) end start)))
+    (if (eq last-command 'wcy-mark-some-thing-at-point)
+        (progn
+          ;; exchange mark and point
+          (goto-char (mark-marker))
+          (set-marker (mark-marker) from))
+      (push-mark (if (= goto-point start) end start) nil t)
+      (when (and (interactive-p) (null transient-mark-mode))
+        (goto-char (mark-marker))
+        (sit-for 0 500 nil))
+      (goto-char goto-point))))
 
 (provide 'init-editing)
