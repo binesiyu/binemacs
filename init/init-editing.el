@@ -5,6 +5,7 @@
  make-backup-files nil
 )
 
+(set 'cua-enable-cua-keys nil)
 
 (global-auto-revert-mode)
 (setq global-auto-revert-non-file-buffers t

@@ -4,12 +4,20 @@
 
 ;;help
 (global-set-key (kbd "C-x /") 'help-command)
+(define-key help-mode-map "n" 'help-go-back)
+(define-key help-mode-map "p" 'help-go-forward)
+(define-key help-mode-map "j" 'help-follow)
+
 
 ;;use regex searches by default
 (global-set-key (kbd "C-s") 'isearch-forward-regexp)
 (global-set-key (kbd "C-r") 'isearch-backward-regexp)
 (global-set-key (kbd "C-M-s") 'isearch-forward)
 (global-set-key (kbd "C-M-r") 'isearch-backward)
+
+;;use up by default
+(global-set-key (kbd "M-v") 'scroll-up-command)
+(global-set-key (kbd "C-v") 'scroll-down-command)
 
 ;;ido
 (global-set-key (kbd "M-x") 'smex)

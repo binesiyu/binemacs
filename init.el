@@ -34,7 +34,7 @@
 (require 'init-auto-complete)
 
 ;;lang
-(requir 'init-elsp)
+(require 'init-elsp)
 
 ;;session
 (require 'init-sessions)
