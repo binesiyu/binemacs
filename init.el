@@ -33,6 +33,8 @@
 (require 'init-yasnippet)
 (require 'init-auto-complete)
 
+;;lang
+(requir 'init-elsp)
 
 ;;session
 (require 'init-sessions)

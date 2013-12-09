@@ -32,6 +32,7 @@
 (define-key ctl-x-m-map (kbd "n") 'next-buffer)
 (define-key ctl-x-m-map (kbd "p") 'previous-buffer)
 (define-key ctl-x-m-map (kbd "h") 'exsaber/mark-some-thing-at-point)
+(define-key ctl-x-m-map (kbd ",") 'describe-function-at-point)
 
 (global-set-key (kbd "C-x m") 'ctl-x-m-map)
 (global-set-key (kbd "C-x C-m") 'smex)
