@@ -36,4 +36,8 @@
 ;;ascii
 (require-package 'ascii)
 
+;;tabbar
+(require-package 'tabbar)
+(require-package 'tabbar-ruler)
+
 (provide 'init-package)

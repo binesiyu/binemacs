@@ -36,6 +36,12 @@
 ;;lang
 (require 'init-elsp)
 
+;;org
+(require 'init-org)
+
+;;tabbar
+(require 'init-tabbar)
+
 ;;session
 (require 'init-sessions)
 
