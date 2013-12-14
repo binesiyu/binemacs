@@ -1,12 +1,17 @@
 ;; -*- coding: utf-8 -*-
 (add-to-list 'load-path (expand-file-name "~/.emacs.d"))
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/init"))
+(add-to-list 'load-path (expand-file-name "~/.emacs.d/lisps"))
+
 
 ;; Measure startup time
 (require 'init-time)
 
 ;;buildin-package
 (require 'init-buildin)
+
+;;my
+(require 'init-my)
 
 ;;util
 (require 'init-utils )
@@ -30,6 +35,7 @@
 (require 'init-move)
 
 ;;ac
+(require 'init-template)
 (require 'init-yasnippet)
 (require 'init-auto-complete)
 

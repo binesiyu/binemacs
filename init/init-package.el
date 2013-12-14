@@ -16,6 +16,7 @@
 ;;ac
 (require-package 'auto-complete)
 (require-package 'yasnippet)
+(require-package 'defaultcontent)
 
 ;;theme
 (when (< emacs-major-version 24)
@@ -39,5 +40,6 @@
 ;;tabbar
 (require-package 'tabbar)
 (require-package 'tabbar-ruler)
+
 
 (provide 'init-package)
