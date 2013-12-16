@@ -37,8 +37,8 @@
 (define-key ctl-x-m-map (kbd "w") 'change-split-type-3)
 (define-key ctl-x-m-map (kbd "b") 'roll-v-3)
 (define-key ctl-x-m-map (kbd "m") 'toggle-maximize-frame)
-(define-key ctl-x-m-map (kbd "n") 'next-buffer)
-(define-key ctl-x-m-map (kbd "p") 'previous-buffer)
+(define-key ctl-x-m-map (kbd "n") 'tabbar-forward)
+(define-key ctl-x-m-map (kbd "p") 'tabbar-backward)
 (define-key ctl-x-m-map (kbd "h") 'exsaber/mark-some-thing-at-point)
 (define-key ctl-x-m-map (kbd ",") 'describe-function-at-point)
 
