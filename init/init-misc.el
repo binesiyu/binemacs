@@ -51,7 +51,7 @@
 (fset 'yes-or-no-p 'y-or-n-p)
 
 ;;show line num
-(global-linum-mode 1)
+;;(global-linum-mode 1)
 
 ;; auto-compression
 (auto-compression-mode t)

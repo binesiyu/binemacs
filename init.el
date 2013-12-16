@@ -23,6 +23,9 @@
 ;;editing
 (require 'init-editing)
 
+;;linum
+(require 'init-linum)
+
 ;;ido
 (require 'init-ido)
 
