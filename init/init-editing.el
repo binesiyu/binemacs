@@ -103,4 +103,7 @@
         (sit-for 0 500 nil))
       (goto-char goto-point))))
 
+;;move-lines
+(require 'move-text)
+
 (provide 'init-editing)
