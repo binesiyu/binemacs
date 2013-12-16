@@ -33,6 +33,7 @@
 (require-package 'whitespace-cleanup-mode)
 (require-package 'mic-paren)
 (require-package 'expand-region)
+(require-package 'move-text)
 
 ;;ascii
 (require-package 'ascii)

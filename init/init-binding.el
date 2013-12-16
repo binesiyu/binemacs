@@ -66,6 +66,10 @@
 (global-set-key (kbd "C-x C-.") 'pop-global-mark)
 (global-set-key (kbd "C-c p") 'duplicate-line-or-region)
 
+(move-text-default-bindings)
+(global-set-key (kbd "M-p") 'move-text-up)
+(global-set-key (kbd "M-n") 'move-text-down)
+
 ;(global-set-key (kbd "C-k") 'kill-whole-line)
 
 ;;org
