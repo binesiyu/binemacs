@@ -23,6 +23,9 @@
 ;;editing
 (require 'init-editing)
 
+;;emaci
+(require 'init-emaci)
+
 ;;linum
 (require 'init-linum)
 

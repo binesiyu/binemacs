@@ -103,7 +103,7 @@
                   (split-type-1 nil)
                   (split-type-2 nil)
                   )
-              (if (>= 10 (- (frame-width) (window-width)))
+              (if (window-full-width-p)
                   (setq split-type-1 'split-window-horizontally
                         split-type-2 'split-window-vertically)
                 (setq split-type-1 'split-window-vertically
