@@ -42,5 +42,7 @@
 (require-package 'tabbar)
 (require-package 'tabbar-ruler)
 
+;;theme
+(require-package 'monokai-theme)
 
 (provide 'init-package)
